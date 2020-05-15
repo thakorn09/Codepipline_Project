@@ -2,7 +2,6 @@ version: 0.2
 phases:
   install:
     runtime-version:
-       runtime-versions:
          java: openjdk8
          docker: 18
  
