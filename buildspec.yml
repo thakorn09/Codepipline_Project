@@ -9,6 +9,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
+      - aws --version
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
       - REPOSITORY_URI=862605034458.dkr.ecr.ap-southeast-1.amazonaws.com/cicdproject
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
