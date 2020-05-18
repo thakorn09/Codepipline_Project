@@ -34,12 +34,5 @@ phases:
       - echo Finish
     
     
-artifacts:
-  type: zip
-  files:
-    - 'appspec.yml'
-    - 'scripts/before_startcon.sh'
-    - 'scripts/start_container.sh'
-    - 'scripts/stop_container.sh'
-      
+
       
