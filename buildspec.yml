@@ -32,5 +32,14 @@ phases:
       - echo Pushing the Docker images...
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Finish
+    
+    
+artifacts:
+  type: zip
+  files:
+    - 'appspec.yml'
+    - 'scripts/before_startcon.sh'
+    - 'scripts/start_container.sh'
+    - 'scripts/stop_container.sh'
       
       
