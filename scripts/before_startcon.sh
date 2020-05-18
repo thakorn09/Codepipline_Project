@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Login to ECR"
+echo 'Login to ECR'
 
 
 
