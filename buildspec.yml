@@ -25,27 +25,23 @@ phases:
       - echo Building the Docker image...
       - docker build -t $REPOSITORY_URI:$IMAGE_TAG .
       - echo $IMAGE_TAG
+      
+ 
+  post_build:
+    commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Finish
- 
-  post_build:
-    commands:
-      - echo 'Deploy to ec2'
-      - cd ..
-      - echo 'Remote to ec2'
-      - ssh -i "Codepipeline.pem" ubuntu@ec2-52-77-212-137.ap-southeast-1.compute.amazonaws.com
-      - echo 'loginECR'
-      - $sudo $(aws ecr get-login --no-include-email --region ap-southeast-1)
-      - echo 'stop container'
-      - docker rm -f $(docker ps -a -q)
-      - echo Pull the Docker images to ec2
-      - docker pull $REPOSITORY_URI:$IMAGE_TAG
-      - echo 'start container'
-      - docker run -d -p 9000:9000 $REPOSITORY_URI:$SHA
-      - echo Finish
-     
+      
+artifacts:
+  type: zip
+  files:
+    - 'appspec.yml'
+    - 'scripts/before_startcon.sh'
+    - 'scripts/start_container.sh'
+    - 'scripts/stop_container.sh'
+      
       
 
 
