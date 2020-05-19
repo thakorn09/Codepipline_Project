@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'start_container'
+echo start_container
