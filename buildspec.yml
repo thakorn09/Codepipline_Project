@@ -33,6 +33,7 @@ phases:
   post_build:
     commands:
       - echo 'Deploy to ec2'
+      - cd ..
       - echo 'Remote to ec2'
       - ssh -i "Codepipeline.pem" ubuntu@ec2-52-77-212-137.ap-southeast-1.compute.amazonaws.com
       - echo 'loginECR'
