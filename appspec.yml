@@ -8,7 +8,7 @@ hooks:
     - location: scripts/kill_container.sh
       timeout: 20
       runas: ubuntu
-  BeforeStart:
+  AfterInstall:
     - location: scripts/before_startcon.sh
       timeout: 300
       runas: ubuntu
