@@ -1,3 +1,3 @@
 #!/bin/bash
-echo 'Stopping the running containers'
+echo 'Stopping the running container'
 
