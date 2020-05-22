@@ -5,7 +5,7 @@ files:
     destination: /home/ubuntu
 hooks:
   ApplicationStop:
-    - location: scripts/stop_container.sh
+    - location: scripts/kill_container.sh
       timeout: 20
       runas: ubuntu
   AfterInstall:
