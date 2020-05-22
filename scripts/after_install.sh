@@ -1,3 +1,3 @@
 #!/bin/bash
-echo 'Login to ECR'
+echo 'Login To ECR'
 $sudo $(aws ecr get-login --no-include-email --region ap-southeast-1)
