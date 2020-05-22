@@ -38,11 +38,9 @@ artifacts:
   type: zip
   files:
     - 'appspec.yml'
-    - 'scripts/before_startcon.sh'
+    - 'scripts/after_install.sh'
     - 'scripts/start_container.sh'
-    - 'scripts/stop_container.sh'
-      
-      
+    - 'scripts/kill_container.sh'
 
 
     

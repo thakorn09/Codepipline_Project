@@ -9,7 +9,7 @@ hooks:
       timeout: 20
       runas: ubuntu
   AfterInstall:
-    - location: scripts/before_startcon.sh
+    - location: scripts/after_install.sh
       timeout: 300
       runas: ubuntu
   ApplicationStart:
