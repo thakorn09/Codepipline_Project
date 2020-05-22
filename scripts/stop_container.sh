@@ -1,2 +1,2 @@
 #!/bin/bash
-echo Stopping the running container
+echo 'Stopping the running container'
