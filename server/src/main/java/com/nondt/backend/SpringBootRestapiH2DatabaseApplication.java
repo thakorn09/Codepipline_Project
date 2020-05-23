@@ -78,7 +78,7 @@ public class SpringBootRestapiH2DatabaseApplication {
                 worktimeRepository.save(worktime);
             });
 
-            Stream.of( "ห้องผ่าตัด1","ห้องผ่าตัด2","ห้องผ่าตัด 3","ห้องตรวจ 1","ห้องตรวจ 2","ห้องตรวจภายใน","ห้องฉายรังสี",
+            Stream.of( "ห้องผ่าตัด1","ห้องผ่าตัด2","ห้องผ่าตัด 3","ห้องผ่าตัด 4","ห้องตรวจ 1","ห้องตรวจ 2","ห้องตรวจภายใน","ห้องฉายรังสี",
             "ห้อง CT Scan1","ห้อง CT Scan 2","ห้อง X-ray","ห้องกายภาพ").forEach(rooms -> {
                 Room room = new Room();
                 room.setRoom(rooms);
