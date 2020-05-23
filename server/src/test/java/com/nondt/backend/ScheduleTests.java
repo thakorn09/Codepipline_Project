@@ -61,7 +61,7 @@ public class ScheduleTests {
         Department department = departmentRepository.findById(1);
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        LocalDate ScheduleDate = LocalDate.parse("2026-02-28",formatter);
+        LocalDate ScheduleDate = LocalDate.parse("2027-02-28",formatter);
 
         Worktime worktime = worktimeRepository.findById(1);
 
