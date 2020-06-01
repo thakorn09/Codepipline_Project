@@ -60,13 +60,13 @@ public class SpringBootRestapiH2DatabaseApplication {
                 MedicineRepository.save(medicine);
             });
 
-            Stream.of( "เม็ด","แคปซูล","น้ำ","ผง","ขวด" ).forEach(typemedicines -> {
+            Stream.of( "เม็ด","แคปซูล","น้ำ","ผง" ).forEach(typemedicines -> {
                 Typemedicine typemedicine = new Typemedicine();
                 typemedicine.setTypemedicine_name(typemedicines);
                 typemedicineRepository.save(typemedicine);
             });
 
-            Stream.of( "กระปุก","แผง","ซอง","ขวด" ).forEach(typepackings -> {
+            Stream.of( "กระปุก","แผง","ซอง","ขวด","เข็ม" ).forEach(typepackings -> {
                 Typepacking typepacking = new Typepacking();
                 typepacking.setTypepacking_name(typepackings);
                 typepackingRepository.save(typepacking);
