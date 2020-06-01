@@ -16,7 +16,6 @@ phases:
       - echo Grant execute permission for gradlew
       - cd server
       - chmod 755 ./gradlew
-      - sudo apt-get install -y sed
       - echo Test
       - ./gradlew test
       
