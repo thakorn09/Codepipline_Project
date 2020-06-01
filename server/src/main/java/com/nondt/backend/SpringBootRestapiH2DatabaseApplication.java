@@ -60,7 +60,7 @@ public class SpringBootRestapiH2DatabaseApplication {
                 MedicineRepository.save(medicine);
             });
 
-            Stream.of( "เม็ด","แคปซูล","น้ำ","ผง" ).forEach(typemedicines -> {
+            Stream.of( "เม็ด","แคปซูล","น้ำ","ผง","ขวด" ).forEach(typemedicines -> {
                 Typemedicine typemedicine = new Typemedicine();
                 typemedicine.setTypemedicine_name(typemedicines);
                 typemedicineRepository.save(typemedicine);
