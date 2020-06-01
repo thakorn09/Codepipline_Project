@@ -23,16 +23,17 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t $REPOSITORY_URI:$IMAGE_TAG .
+      - docker-compose build
       - echo $IMAGE_TAG
-      - sed -i -e "s|IMAGE_TAG|$IMAGE_TAG|g" scripts/start_container.sh
+  
       
  
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - docker push $REPOSITORY_URI:$IMAGE_TAG
+      - docker-compose push
+      - sed -i -e "s|IMAGE_TAG|$IMAGE_TAG|g" scripts/start_container.sh
       - echo 'Finish'
       
 artifacts:
