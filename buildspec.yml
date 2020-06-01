@@ -24,7 +24,6 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t $REPOSITORY_URI:$IMAGE_TAG .
-      - docker tag $REPOSITORY_URI:$IMAGE_TAG
       - echo $IMAGE_TAG
       - sed -i -e "s|IMAGE_TAG|$IMAGE_TAG|g" scripts/start_container.sh
       
