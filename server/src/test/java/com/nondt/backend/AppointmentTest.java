@@ -144,7 +144,7 @@ public class AppointmentTest {
         Appointment appointment = new Appointment();
 
         final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        final LocalDate dateap = LocalDate.parse("2020-05-30",formatter);
+        final LocalDate dateap = LocalDate.parse("2021-05-30",formatter);
 
         appointment.setCause("ปวดหัว");
         LocalDate date = LocalDate.now();
