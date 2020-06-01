@@ -54,7 +54,7 @@ public class SpringBootRestapiH2DatabaseApplication {
                 appointmenttimeRepository.save(appointmenttime);
             });
 
-            Stream.of( "ยาพารา","ยาแก้ปวด","ยาแก้ไข้","ยาแก้เเพ้").forEach(medicines -> {
+            Stream.of( "ยาพารา","ยาแก้ปวด","ยาแก้ไข้","ยาแก้เเพ้","ยาแก้ไอ").forEach(medicines -> {
                 Medicine medicine = new Medicine();
                 medicine.setMedicine_name(medicines);
                 MedicineRepository.save(medicine);
