@@ -39,6 +39,7 @@ artifacts:
   type: zip
   files:
     - 'appspec.yml'
+    - 'docker-compose.yml'
     - 'scripts/after_install.sh'
     - 'scripts/start_container.sh'
     - 'scripts/kill_container.sh'

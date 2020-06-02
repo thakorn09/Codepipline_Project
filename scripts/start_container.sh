@@ -1,5 +1,5 @@
 #!/bin/bash
 echo 'start_container'
-cd server
+cd ~
 docker-compose pull
 docker-compose up -d

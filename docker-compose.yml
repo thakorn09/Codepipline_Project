@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  backend:
+      build: .
+      image: 862605034458.dkr.ecr.ap-southeast-1.amazonaws.com/codepipeline:latest
+      ports:
+        - 9000:9000
