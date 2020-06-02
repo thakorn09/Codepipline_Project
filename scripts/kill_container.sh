@@ -1,4 +1,4 @@
 #!/bin/bash
-echo 'change directory'
+echo 'change dir'
 cd server
 echo 'Stopping the running container on Ec2'
