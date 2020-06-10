@@ -23,8 +23,9 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
+      - cd ..
       - pwd
-      - docker build -t $REPOSITORY_URI:$IMAGE_TAG .
+      - docker-compose build
       - echo $IMAGE_TAG
   
       
