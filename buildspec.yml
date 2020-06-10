@@ -23,7 +23,6 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - cd ..
       - ls -al
       - pwd
       - docker-compose build
